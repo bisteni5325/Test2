@@ -1,0 +1,44 @@
+@font-face {
+    font-display: swap;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 400;
+    src: url('~assets/fonts/jost/jost-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    src: url('~assets/fonts/jost/jost-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 600;
+    src: url('~assets/fonts/jost/jost-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 700;
+    src: url('~assets/fonts/jost/jost-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 800;
+    src: url('~assets/fonts/jost/jost-ExtraBold.ttf') format('truetype');
+}
+
+.btn-primary{
+    background: #F20C49;
+    border-radius: 30px;
+}

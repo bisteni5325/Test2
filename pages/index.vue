@@ -1,5 +1,6 @@
 <template>
-  <div class="container">
+  <div>
+    <Navbar />
     <div>
       <Logo />
       <h1 class="title">
@@ -28,7 +29,10 @@
 </template>
 
 <script>
-export default {}
+import NavBar from '../components/Navbar'
+export default {
+  components: { NavBar }
+}
 </script>
 
 <style>
