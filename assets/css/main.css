@@ -38,7 +38,7 @@
     src: url('~assets/fonts/jost/jost-ExtraBold.ttf') format('truetype');
 }
 
-.btn-primary{
+.btn-primary, .btn-primary:hover, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle, button:focus:not(:focus-visible){
     background: #F20C49;
     border-radius: 30px;
     border: none;

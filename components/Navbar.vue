@@ -17,7 +17,7 @@
                     <b-nav-item href="#">Preguntas frecuentes</b-nav-item>
                     <b-nav-item class="color-red" href="#">Iniciar sesión</b-nav-item>
                     
-                        <b-button variant="primary" pill @click="login = !login">Iniciar sesión</b-button>
+                        <b-button variant="primary" pill>Cotizar mi seguro</b-button>
                     
                 </b-navbar-nav>
             </b-navbar-nav>
@@ -35,5 +35,17 @@
     }
     .navbar-collapse {
         padding-right: 90px;
+    }
+    .navbar-dark .navbar-nav .nav-link,.navbar-dark .navbar-nav .nav-link:hover{
+        color: #282828;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .color-red a {
+        color: #F20C49 !important;
+    }
+    .btn-primary{
+        width: 206px;
+        height: 44px;
     }
 </style>
