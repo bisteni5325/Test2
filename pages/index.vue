@@ -1,37 +1,16 @@
 <template>
   <div>
     <Navbar />
-    <div>
-      <Logo />
-      <h1 class="title">
-        gari-landing
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+    <Billboard />
     </div>
   </div>
 </template>
 
 <script>
 import NavBar from '../components/Navbar'
+import Billboard from '../components/Billboard'
 export default {
-  components: { NavBar }
+  components: { NavBar, Billboard }
 }
 </script>
 

@@ -1,4 +1,7 @@
 {
+  "Billboard": {
+    "description": "Auto imported from components/Billboard.vue"
+  },
   "Logo": {
     "description": "Auto imported from components/Logo.vue"
   },
