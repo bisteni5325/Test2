@@ -1,37 +1,15 @@
 <template>
   <div>
     <Navbar />
-    <div>
-      <Logo />
-      <h1 class="title">
-        gari-landing
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <Faq />
   </div>
 </template>
 
 <script>
 import NavBar from '../components/Navbar'
+import Faq from '../components/Faq'
 export default {
-  components: { NavBar }
+  components: { NavBar, Faq}
 }
 </script>
 
