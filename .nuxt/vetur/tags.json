@@ -1,4 +1,7 @@
 {
+  "GeneralSeguros": {
+    "description": "Auto imported from components/GeneralSeguros.vue"
+  },
   "Logo": {
     "description": "Auto imported from components/Logo.vue"
   },
