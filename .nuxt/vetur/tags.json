@@ -1,4 +1,7 @@
 {
+  "App": {
+    "description": "Auto imported from components/App.vue"
+  },
   "Logo": {
     "description": "Auto imported from components/Logo.vue"
   },
