@@ -18,7 +18,7 @@
         </div>
     </div>
 </template>
-<style>
+<style scoped>
     .custom-title{
         font-family: Jost;
         font-style: normal;
