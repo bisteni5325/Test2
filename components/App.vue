@@ -46,9 +46,46 @@
         position: absolute;
         left: -190px;
         top: -400px;
-        opacity: 0.7;
+        z-index: -1;
+        opacity: 0.6;
     }
     .img-app{
         position: relative;
+    }
+    .app-title{
+        font-family: Jost;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+        /* identical to box height, or 125% */
+
+        margin-top: 150px;
+
+        color: #4A25AA;
+    }
+    .text-special{
+        font-family: Jost;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+
+        color: #282828;
+        margin-top: 20px;
+    }
+    .prev-text{
+        font-family: Jost;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+
+        /* Text dark */
+
+        color: #282828;
+    }
+    .app-subtitle{
+        margin-top: 20px;
     }
 </style>
