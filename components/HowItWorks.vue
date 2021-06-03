@@ -49,7 +49,7 @@ export default {
     }
 }
 </script>
-<style scroped>
+<style scoped>
     .section-title{
         font-family: Jost;
         font-style: normal;
