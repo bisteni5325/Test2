@@ -2,6 +2,7 @@ import Vue from 'vue'
 import { wrapFunctional } from './utils'
 
 const components = {
+  App: () => import('../..\\components\\App.vue' /* webpackChunkName: "components/app" */).then(c => wrapFunctional(c.default || c)),
   Custom: () => import('../..\\components\\Custom.vue' /* webpackChunkName: "components/custom" */).then(c => wrapFunctional(c.default || c)),
   Faq: () => import('../..\\components\\Faq.vue' /* webpackChunkName: "components/faq" */).then(c => wrapFunctional(c.default || c)),
   GeneralSeguros: () => import('../..\\components\\GeneralSeguros.vue' /* webpackChunkName: "components/general-seguros" */).then(c => wrapFunctional(c.default || c)),

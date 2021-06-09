@@ -6,6 +6,8 @@
     <Custom />
     <Faq />
     <GeneralSeguros />
+    <Navbar />
+    <App />
   </div>
 </template>
 
@@ -16,8 +18,9 @@ import Video from '../components/Video'
 import Custom from '../components/Custom'
 import Faq from '../components/Faq'
 import GeneralSeguros from '../components/GeneralSeguros'
+import App from '../components/App'
 export default {
-  components: { NavBar, Video, HowItWorks, Custom, Faq, GeneralSeguros }
+  components: { NavBar, Video, HowItWorks, Custom, Faq, GeneralSeguros, App }
 }
 </script>
 
