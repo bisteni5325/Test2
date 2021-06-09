@@ -2,6 +2,9 @@
   "Custom": {
     "description": "Auto imported from components/Custom.vue"
   },
+  "Faq": {
+    "description": "Auto imported from components/Faq.vue"
+  },
   "HowItWorks": {
     "description": "Auto imported from components/HowItWorks.vue"
   },
