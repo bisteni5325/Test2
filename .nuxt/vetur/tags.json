@@ -1,4 +1,7 @@
 {
+  "HowItWorks": {
+    "description": "Auto imported from components/HowItWorks.vue"
+  },
   "Logo": {
     "description": "Auto imported from components/Logo.vue"
   },
