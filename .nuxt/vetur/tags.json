@@ -5,6 +5,9 @@
   "Faq": {
     "description": "Auto imported from components/Faq.vue"
   },
+  "GeneralSeguros": {
+    "description": "Auto imported from components/GeneralSeguros.vue"
+  },
   "HowItWorks": {
     "description": "Auto imported from components/HowItWorks.vue"
   },

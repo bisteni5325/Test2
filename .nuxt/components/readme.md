@@ -8,6 +8,7 @@ You can directly use them in pages and other components without the need to impo
 
 - `<Custom>` | `<custom>` (components/Custom.vue)
 - `<Faq>` | `<faq>` (components/Faq.vue)
+- `<GeneralSeguros>` | `<general-seguros>` (components/GeneralSeguros.vue)
 - `<HowItWorks>` | `<how-it-works>` (components/HowItWorks.vue)
 - `<Logo>` | `<logo>` (components/Logo.vue)
 - `<Navbar>` | `<navbar>` (components/Navbar.vue)
