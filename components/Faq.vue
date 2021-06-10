@@ -1,14 +1,16 @@
 <template>
     <div class="faq-section">
         <div class="container-fluid text-center">
-            <div class="section-title">
-                Preguntas frecuentes
-            </div>
+            
             <div class="row">
                 <div class="col-md-6">
-                    <img src="~/assets/img/faqs.svg" class="img-general" alt="">        
+                    <img src="~/assets/img/faqs-desktop.png" class="img-general-desk mt-5 img-fluid" alt="">
+                    <img src="~/assets/img/faqs-movil.png" class="img-general-mov mt-5 img-fluid" alt="">
                 </div>
                 <div class="col-md-5 text-left">
+                    <div class="section-title">
+                        Preguntas frecuentes
+                    </div>
                     <div class="accordion" role="tablist" v-for="faq in faqs" :key="faq.title">
                         <b-card no-body class="mb-1">
                         <b-card-header header-tag="header" class="p-1" role="tab" @click="faq.id = !faq.id">
@@ -55,15 +57,23 @@ export default {
 }
 </script>
 <style scoped>
+.img-general-desk{
+    display: inherit;
+}
+.img-general-mov{
+    display: none;
+}
+.faq-section{
+    margin-bottom: 100px;
+}
     .section-title{
         font-family: Jost;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 32px;
         line-height: 40px;
         /* identical to box height, or 125% */
 
-        text-align: center;
         color: #4A25AA;
         margin-bottom: 65px;
     }
@@ -83,11 +93,38 @@ export default {
     }
     .btn-primary-outline{
         /* Primary color */
-
+        width: 245px;
+        height: 45px;
         border: 1px solid #F20C49;
         box-sizing: border-box;
         border-radius: 34px;
         margin-top: 20px;
         color: #F20C49;
     }
+    .accordion > .card > .card-header {
+        height: 85px;
+    }
+    @media (max-width: 576px) { 
+     .img-general-mov{
+        display: inline-block;
+        width: 100%;
+        margin-top: -150px !important;
+     }   
+     .img-general-desk{
+         display: none;
+     }
+     .container-fluid{
+        padding-right: 0px;
+     }
+    }
+
+
+    @media (max-width: 768px) {
+
+     }
+
+
+    @media (min-width: 992px) {
+
+     }
 </style>

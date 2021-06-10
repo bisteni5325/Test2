@@ -1,11 +1,16 @@
 <template>
     <div>
         <b-navbar toggleable="lg" type="dark" variant="info">
+            <b-navbar-toggle target="nav-collapse">
+                <img src="~/assets/img/hamburger.svg" class="img-fluid" alt="">
+            </b-navbar-toggle>
             <b-navbar-brand href="#">
-                <img src="~/assets/img/Gari-Logo.svg" alt="">
+                <img src="~/assets/img/Gari-Logo.svg" class="img-fluid" alt="">
             </b-navbar-brand>
 
-            <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+            <b-navbar-toggle>
+                <b-button variant="primary" class="cot-head" pill>Cotizar</b-button>
+            </b-navbar-toggle>
 
             <b-collapse id="nav-collapse" is-nav>
 
@@ -48,4 +53,13 @@
         width: 206px;
         height: 44px;
     }
+    .cot-head{
+        width: 100px;
+    }
+    @media (max-width: 768px) {
+        .navbar-brand {
+            padding-left: 0px;
+            margin-left: -30%;
+        }
+     }
 </style>

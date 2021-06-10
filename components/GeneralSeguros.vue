@@ -5,7 +5,7 @@
             <img src="~/assets/img/right.svg" class="img-right" alt="">
             <div class="row info-container">
                 <div class="col-md-4">
-                    <img src="~/assets/img/general-seguros.svg" class="img-general" alt="">        
+                    <img src="~/assets/img/general-seguros.svg" class="img-general img-fluid" alt="">        
                 </div>
                 <div class="col-md-8 text-section">
                     <div class="general-title">
@@ -30,10 +30,11 @@
 <style scoped>
 .info-container{
     padding-top: 100px;
+    margin-bottom: 150px;
+    margin-top: 50px;
 }
 .container-fluid{
     padding-left: 0px;
-    padding-right: 0px;
 }
     .img-left{
         position: absolute;
@@ -73,4 +74,33 @@
         left: 180px;
         margin-top: 40px;
     }
+
+    @media (max-width: 576px) { 
+        
+    }
+
+
+    @media (max-width: 768px) {
+        .img-left, .img-right {
+            display: none;
+        }
+        .img-general{
+            left: 0px;
+        }
+        .text-section{
+            margin-top: 150px;
+        }
+        .container-fluid{
+            padding-left: 15px;
+        }
+        .info-container{
+            padding-top: 0px !important;
+            margin-bottom: 0px;
+        }
+     }
+
+
+    @media (min-width: 992px) {
+
+     }
 </style>

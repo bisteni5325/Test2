@@ -6,10 +6,16 @@
             </div>
             <div class="row steps">
                 <div id="parent" class="col-md-3 text-left" v-for="how in data" :key="how.title">
-                    <img id="img-desk" class="mb-4" :src="require(`~/assets/img/${ how.img }`)" alt="">
-                    <img id="img-hover" class="mb-4" :src="require(`~/assets/img/${ how.img_hover }`)" alt="">
-                    <div class="step-title">{{how.title}}</div>
-                    <div class="step-text">{{how.text}}</div>
+                    <div class="row">
+                        <div class="col-2 col-md-12">
+                            <img id="img-desk" class="mb-4" :src="require(`~/assets/img/${ how.img }`)" alt="">
+                            <img id="img-hover" class="mb-4" :src="require(`~/assets/img/${ how.img_hover }`)" alt="">        
+                        </div>
+                        <div class="col-10 col-md-12">
+                            <div class="step-title">{{how.title}}</div>
+                            <div class="step-text">{{how.text}}</div>
+                        </div>
+                    </div>
                 </div>
             </div>
        </div>
@@ -50,10 +56,14 @@ export default {
 }
 </script>
 <style scoped>
+.how-works-section{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
     .section-title{
         font-family: Jost;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 700;
         font-size: 32px;
         line-height: 40px;
         color: #4A25AA;
@@ -78,7 +88,7 @@ export default {
         
         font-family: Jost;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 20px;
         line-height: 20px;
         /* or 100% */
@@ -87,7 +97,7 @@ export default {
     .step-text{
         font-family: Jost;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 500;
         font-size: 16px;
         line-height: 23px;
 
@@ -96,4 +106,16 @@ export default {
         color: #282828;
         margin-top: 18px;
     }
+
+    @media (max-width: 576px) { 
+        
+    }
+
+
+    @media (max-width: 768px) {
+        .how-works-section{
+            margin-bottom: 0px;
+            margin-top: 80px;
+        }
+     }
 </style>
