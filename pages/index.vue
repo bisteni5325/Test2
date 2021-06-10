@@ -1,13 +1,14 @@
 <template>
   <div>
     <Navbar />  
+    <Billboard />
     <Video />
     <HowItWorks />
     <Custom />
-    <Faq />
     <GeneralSeguros />
-    <Navbar />
-    <App />
+    <Faq />
+    <Footer />
+    </div>
   </div>
 </template>
 
@@ -18,9 +19,10 @@ import Video from '../components/Video'
 import Custom from '../components/Custom'
 import Faq from '../components/Faq'
 import GeneralSeguros from '../components/GeneralSeguros'
-import App from '../components/App'
+import Billboard from '../components/Billboard'
+import Footer from '../components/Footer'
 export default {
-  components: { NavBar, Video, HowItWorks, Custom, Faq, GeneralSeguros, App }
+  components: { NavBar, Video, HowItWorks, Custom, Faq, GeneralSeguros, Billboard, Footer }
 }
 </script>
 

@@ -2,11 +2,17 @@
   "App": {
     "description": "Auto imported from components/App.vue"
   },
+  "Billboard": {
+    "description": "Auto imported from components/Billboard.vue"
+  },
   "Custom": {
     "description": "Auto imported from components/Custom.vue"
   },
   "Faq": {
     "description": "Auto imported from components/Faq.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
   },
   "GeneralSeguros": {
     "description": "Auto imported from components/GeneralSeguros.vue"
