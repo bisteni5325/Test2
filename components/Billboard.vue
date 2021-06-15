@@ -74,25 +74,4 @@
 
     }
 
-    .animate {
-    transition-delay: .5s;
-    transition-duration: .6s;
-    transition-timing-function: ease-in;
-    }
-
-    .slide-up {
-        transform: translateY(0);
-    }
-
-    .slide-up.animate-active {
-        transform: translateY(-100px);
-    }
-
-    .fade-in-scroll {
-        opacity: 0;
-    }
-    .fade-in-scroll.animate-active {
-        display: block;
-        opacity: 1;
-    }
 </style>
