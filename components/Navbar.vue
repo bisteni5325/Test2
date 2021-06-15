@@ -17,9 +17,9 @@
             <!-- Right aligned nav items -->
             <b-navbar-nav class="ml-auto nv">
                 <b-navbar-nav>
-                    <b-nav-item href="#beneficios">Inicio</b-nav-item>
-                    <b-nav-item href="#planes">¿Cómo funciona?</b-nav-item>
-                    <b-nav-item href="#">Preguntas frecuentes</b-nav-item>
+                    <b-nav-item href="/">Inicio</b-nav-item>
+                    <b-nav-item href="/#como-funciona">¿Cómo funciona?</b-nav-item>
+                    <b-nav-item href="/#faqs">Preguntas frecuentes</b-nav-item>
                     <b-nav-item class="color-red" href="#">Iniciar sesión</b-nav-item>
                     
                         <b-button variant="primary" pill>Cotizar mi seguro</b-button>
@@ -55,6 +55,9 @@
     }
     .cot-head{
         width: 100px;
+    }
+    .nav-item{
+        margin-right: 10px;
     }
     @media (max-width: 768px) {
         .navbar-brand {

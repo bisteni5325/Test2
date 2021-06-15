@@ -1,11 +1,11 @@
 <template>
     <div class="billboard-section text-center">
-        <div class="billboard-title">
-                Un seguro justo y divertido
-            </div>
-            <div class="billboard-tag">Seguro basado en cuanto y como conduces</div>
-            
-            <b-btn variant="primary" fill>Cotizar ahora</b-btn>
+        <div class="billboard-title animate__animated" v-animate.repeat="'animate__fadeInRight'">
+            Un seguro justo y divertido
+        </div>
+        <div class="billboard-tag animate__animated" v-animate.repeat="'animate__fadeInLeft'">Seguro basado en cuanto y como conduces</div>
+        
+        <b-btn variant="primary animate__animated" v-animate.repeat="'animate__fadeInUp'" fill>Cotizar ahora</b-btn>
     </div>
 </template>
 <style scoped>
@@ -72,5 +72,27 @@
 
     @media (min-width: 992px) {
 
+    }
+
+    .animate {
+    transition-delay: .5s;
+    transition-duration: .6s;
+    transition-timing-function: ease-in;
+    }
+
+    .slide-up {
+        transform: translateY(0);
+    }
+
+    .slide-up.animate-active {
+        transform: translateY(-100px);
+    }
+
+    .fade-in-scroll {
+        opacity: 0;
+    }
+    .fade-in-scroll.animate-active {
+        display: block;
+        opacity: 1;
     }
 </style>

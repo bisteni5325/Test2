@@ -1,5 +1,5 @@
 <template>
-    <div class="how-works-section">
+    <div class="how-works-section" id="como-funciona">
        <div class="container text-center">
             <div class="section-title">
                 ¿Cómo funciona?

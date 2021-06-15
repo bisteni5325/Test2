@@ -3,15 +3,17 @@
     <Navbar />  
     <Billboard />
     <Video />
-    <HowItWorks />
     <Custom />
     <GeneralSeguros />
     <Faq />
     <Footer />
-    </div>
   </div>
 </template>
-
+<router>
+{
+  alias: '/'
+}
+</router>
 <script>
 import NavBar from '../components/Navbar'
 import HowItWorks from '../components/HowItWorks'

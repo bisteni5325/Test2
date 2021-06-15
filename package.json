@@ -12,7 +12,11 @@
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.15.3",
+    "vue-animate-onscroll": "^1.0.8",
+    "vue-animate-scroll": "^0.1.5"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxtjs/router-extras": "^1.1.1"
+  }
 }

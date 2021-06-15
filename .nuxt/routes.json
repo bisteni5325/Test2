@@ -1,8 +1,22 @@
 [
   {
+    "name": "faqs",
+    "path": "/faqs",
+    "component": "C:\\\\laragon\\\\www\\\\gari-landing\\\\pages\\\\faqs.vue",
+    "chunkName": "pages/faqs",
+    "alias": [
+      "/preguntas-frecuentes"
+    ],
+    "_name": "_4cfc907c"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "C:\\\\laragon\\\\www\\\\gari-landing\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "alias": [
+      "/"
+    ],
+    "_name": "_dba161fa"
   }
 ]

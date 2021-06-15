@@ -1,5 +1,5 @@
 <template>
-    <div class="faq-section">
+    <div class="faq-section" id="faqs">
         <div class="container-fluid text-center">
             
             <div class="row">
@@ -23,7 +23,7 @@
                         </b-collapse>
                         </b-card>
                     </div>
-                    <b-btn variant="primary-outline" pill>
+                    <b-btn variant="primary-outline" to="preguntas-frecuentes" pill>
                         Ver todas las preguntas
                     </b-btn>
                 </div>

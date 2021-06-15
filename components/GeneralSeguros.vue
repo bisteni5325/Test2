@@ -5,13 +5,13 @@
             <img src="~/assets/img/right.svg" class="img-right" alt="">
             <div class="row info-container">
                 <div class="col-md-4">
-                    <img src="~/assets/img/general-seguros.svg" class="img-general img-fluid" alt="">        
+                    <img src="~/assets/img/general-seguros.svg" class="img-general img-fluid animate__animated" v-animate.repeat.fade="'animate__fadeInUp'" alt="">        
                 </div>
                 <div class="col-md-8 text-section">
-                    <div class="general-title">
+                    <div class="general-title animate__animated" v-animate.repeat.fade="'animate__fadeInRight'">
                         ¡Gari está respaldado por una de las mejores aseguradoras del país!
                     </div>
-                    <p>
+                    <p class="animate__animated" v-animate.repeat.fade="'animate__fadeInLeft'">
                         Todas las pólizas de Gari están suscritas por General de seguros, por lo que
                         la solidez y respaldo de nuestro producto está <br> garantizado <br><br>
 

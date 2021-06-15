@@ -4,11 +4,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 text-section offset-md-6">
-                    <div class="custom-title">Personalizado para ti</div>
-                    <div class="goods">Los buenos ahorran más</div>
-                    <div class="text">Estos son sólo algunos de los muchos conductores que se benefician de Gari. <br> ¡Lo más probable es que tú también lo hagas!</div>
+                    <div class="custom-title animate__animated" v-animate.repeat.fade="'animate__fadeInRight'">Personalizado para ti</div>
+                    <div class="goods animate__animated" v-animate.repeat.fade="'animate__fadeInLeft'">Los buenos ahorran más</div>
+                    <div class="text animate__animated" v-animate.repeat.fade="'animate__fadeInLeft'">Estos son sólo algunos de los muchos conductores que se benefician de Gari. <br> ¡Lo más probable es que tú también lo hagas!</div>
 
-                    <div class="cta-btn">
+                    <div class="cta-btn animate__animated" v-animate.repeat.fade="'animate__fadeInUp'">
                         <b-btn variant="primary" pill>
                         Cotizar ahora
                     </b-btn>
@@ -21,29 +21,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-left offset-md-6 text-container">
-                    <div class="app-title">
+                    <div class="app-title animate__animated" v-animate.repeat.fade="'animate__fadeInRight'">
                         Todo en tu app
                     </div>
-                    <div class="text-special">
+                    <div class="text-special animate__animated" v-animate.repeat.fade="'animate__fadeInLeft'">
                         Puedes ver tus viajes, administrar tu póliza
                         y cancelar en cualquier momento
                     </div>
-                    <div class="app-subtitle">
+                    <div class="app-subtitle animate__animated" v-animate.repeat.fade="'animate__fadeInUp'">
                         Prevención
                     </div>
-                    <div class="prev-text">
+                    <div class="prev-text animate__animated" v-animate.repeat.fade="'animate__fadeInUp'">
                         Te motivamos a conducir de forma más segura. Recibirás recomendaciones para prevenir accidentes.
                     </div>
-                    <div class="app-subtitle">
+                    <div class="app-subtitle animate__animated" v-animate.repeat.fade="'animate__fadeInUp'">
                         Seguro divertido
                     </div>
-                    <div class="prev-text">
+                    <div class="prev-text animate__animated" v-animate.repeat.fade="'animate__fadeInUp'">
                         Revisa tus viajes y hábitos de manejo. Compite con otros conductores de Gari y recibe descuentos si eres de los mejores conductores
                     </div>
-                    <div class="app-subtitle">
+                    <div class="app-subtitle animate__animated" v-animate.repeat.fade="'animate__fadeInUp'">
                         Fácil, desde tu app
                     </div>
-                    <div class="prev-text">
+                    <div class="prev-text animate__animated" v-animate.repeat.fade="'animate__fadeInUp'">
                         Reporta siniestros, chatea con nuestros representantes o cancela tu póliza desde tu app
                     </div>
                     <img src="~/assets/img/app-movil.png" class="img-fluid app-mov" alt="">
