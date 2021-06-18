@@ -7,11 +7,11 @@
         </div>
         <div class="how-works-section" id="como-funciona">
         <div class="container text-center">
-                <div class="section-title animate__animated" v-animate.repeat.fade="'animate__fadeInLeft'">
+                <div class="section-title" v-animate.repeat="'fade-in-left'">
                     ¿Cómo funciona?
                 </div>
                 <div class="row steps">
-                    <div id="parent" class="col-md-3 text-left" v-for="how in data" :key="how.title">
+                    <div id="parent" class="col-md-3 text-left" v-animate.repeat="'fade-in-up'" v-for="how in data" :key="how.title">
                         <div class="row">
                             <div class="col-2 col-md-12">
                                 <img id="img-desk" class="mb-4" :src="require(`~/assets/img/${ how.img }`)" alt="">
@@ -34,8 +34,8 @@ export default {
         return {
             data : [
                 {
-                    title: 'Contrata y asegúrate de forma digital e inmediata',
-                    text: 'Cotiza y contrata de manera inmediata en nuestro sitio web. Tu seguro comienza a operar en ese instante',
+                    title: 'Digital e inmediato',
+                    text: 'Cotiza y contrata de manera inmediata en nuestro sitio web. Tu seguro comienza en ese instante',
                     img: 'contrata.svg',
                     img_hover: 'contrata-hov.svg'
                 },
@@ -46,14 +46,14 @@ export default {
                     img_hover: 'descarga-hov.svg'
                 },
                 {
-                    title: 'Maneja normalmente',
+                    title: '¡Listo, ya estás cubierto!',
                     text: 'Mientras conduces, el app de Gari analiza tus patrones de manejo',
                     img: 'maneja.svg',
                     img_hover: 'maneja-hov.svg'
                 },
                 {
                     title: 'Pagos automáticos',
-                    text: 'Cada mes, se calculará la tarifa dependiendo de los kms. recorridos y obtendrás descuentos si tienes una buena calificación de manejo',
+                    text: 'Cada mes, se calculará tu tarifa con base en los kms. recorridos y obtendrás descuentos por buen manejo',
                     img: 'pagos.svg',
                     img_hover: 'pagos-hov.svg'
                 }

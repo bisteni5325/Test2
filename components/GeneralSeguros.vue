@@ -5,22 +5,16 @@
             <img src="~/assets/img/right.svg" class="img-right" alt="">
             <div class="row info-container">
                 <div class="col-md-4">
-                    <img src="~/assets/img/general-seguros.svg" class="img-general img-fluid animate__animated" v-animate.repeat.fade="'animate__fadeInUp'" alt="">        
+                    <img src="~/assets/img/general-seguros.svg" class="img-general img-fluid" v-animate.repeat="'fade-in-up'" alt="">        
                 </div>
                 <div class="col-md-8 text-section">
-                    <div class="general-title animate__animated" v-animate.repeat.fade="'animate__fadeInRight'">
+                    <div class="general-title " v-animate.repeat="'fade-in-right'">
                         ¡Gari está respaldado por una de las mejores aseguradoras del país!
                     </div>
-                    <p class="animate__animated" v-animate.repeat.fade="'animate__fadeInLeft'">
-                        Todas las pólizas de Gari están suscritas por General de seguros, por lo que
-                        la solidez y respaldo de nuestro producto está <br> garantizado <br><br>
+                    <p v-animate.repeat="'fade-in-left'">
+                        Cambiar al texto de abajo. Todas las pólizas de Gari están suscritas por General de Seguros, por lo que la solidez y <br> respaldo de nuestro producto está garantizado.  <br><br>
 
-                        General de seguros es una de las mejores aseguradoras 100% mexicanas y
-                        cuenta con más de 50 años de experiencia <br> en el cuidado de las personas y
-                        empresas. <br><br>
-
-                        Asimismo, cuenta con presencia a nivel nacional con más de 20 oficinas en
-                        todo el país
+                        General de Seguros es una de las mejores aseguradoras mexicanas y cuenta con más de 50 años de experiencia en el <br> cuidado de las personas y empresas.  <br><br>
                     </p>
                 </div>
             </div>

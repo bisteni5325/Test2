@@ -44,10 +44,8 @@
     border: none;
 }
 
-.animate {
-    transition-delay: .1s;
-    transition-duration: .25s;
-    transition-timing-function: ease-in;
+body{
+    overflow-x: hidden;
 }
 
 .slide-up {
@@ -56,4 +54,67 @@
 
 .slide-up.animate-active {
     transform: translateY(-100px);
+}
+
+
+.animate {
+    transition-delay: .3s;
+    transition-duration: 1s;
+    transition-timing-function: all;
+}
+
+.slide-up {
+    transform: translateY(0);
+}
+
+.slide-up.animate-active {
+    transform: translateY(-100px);
+}
+
+.fade-in-right{
+    transform: translate3d(20%, 0, 0);
+    opacity: 0;
+}
+
+.fade-in-right.animate-active {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+.fade-in-left{
+    transform: translate3d(-20%, 0, 0);
+    opacity: 0;
+}
+
+.fade-in-left.animate-active {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+.fade-in-up{
+    transform: translate3d(0, 40%, 0);
+    opacity: 0;
+}
+
+.fade-in-up.animate-active {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+.fade-in-up-special{
+    transform: translate3d(0, 200px, 0);
+    opacity: 0;
+}
+
+.fade-in-up-special.animate-active {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+.fade-in-scroll {
+    opacity: 0;
+}
+.fade-in-scroll.animate-active {
+    display: block;
+    opacity: 1;
 }

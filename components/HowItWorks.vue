@@ -1,13 +1,13 @@
 <template>
     <div class="how-works-section" id="como-funciona">
        <div class="container text-center">
-            <div class="section-title">
+            <div class="section-title" v-animate.repeat="'fade-in-right'">
                 ¿Cómo funciona?
             </div>
             <div class="row steps">
                 <div id="parent" class="col-md-3 text-left" v-for="how in data" :key="how.title">
                     <div class="row">
-                        <div class="col-2 col-md-12">
+                        <div class="col-2 col-md-12" v-animate.repeat="'fade-in-left'">
                             <img id="img-desk" class="mb-4" :src="require(`~/assets/img/${ how.img }`)" alt="">
                             <img id="img-hover" class="mb-4" :src="require(`~/assets/img/${ how.img_hover }`)" alt="">        
                         </div>

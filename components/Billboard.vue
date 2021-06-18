@@ -1,11 +1,11 @@
 <template>
     <div class="billboard-section text-center">
-        <div class="billboard-title animate__animated" v-animate.repeat="'animate__fadeInRight'">
+        <div class="billboard-title" v-animate.repeat="'fade-in-right'">
             Un seguro justo y divertido
         </div>
-        <div class="billboard-tag animate__animated" v-animate.repeat="'animate__fadeInLeft'">Seguro basado en cuanto y como conduces</div>
+        <div class="billboard-tag" v-animate.repeat="'fade-in-left'">Seguro basado en cuanto y como conduces</div>
         
-        <b-btn variant="primary animate__animated" v-animate.repeat="'animate__fadeInUp'" fill>Cotizar ahora</b-btn>
+        <b-btn variant="primary" v-animate.repeat="'fade-in-up'" fill>Cotizar ahora</b-btn>
     </div>
 </template>
 <style scoped>
