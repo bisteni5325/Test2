@@ -14,6 +14,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: max-content;
+        background-position: bottom;
+
     }
     .billboard-title{
         font-family: Jost;
@@ -70,8 +72,10 @@
         }
     }
 
-    @media (min-width: 992px) {
-
+    @media (min-width: 1650px) {
+        .billboard-section{
+            min-height: 800px;
+        }
     }
 
 </style>

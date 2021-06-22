@@ -55,6 +55,7 @@
     }
     .cot-head{
         width: 100px;
+        display: none;
     }
     .nav-item{
         margin-right: 10px;
@@ -63,6 +64,9 @@
         .navbar-brand {
             padding-left: 0px;
             margin-left: -30%;
+        }
+        .cot-head{
+            display: inline;
         }
      }
 </style>
