@@ -66,6 +66,11 @@
     .text-container{
         margin-bottom: 490px;
     }
+    @media (min-width: 1700px) {
+        .text-container{
+            margin-bottom: 850px;
+        }
+    }
     .custom-title{
         font-family: Jost;
         font-style: normal;

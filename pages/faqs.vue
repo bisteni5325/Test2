@@ -17,20 +17,22 @@
             <div class="tabs-content text-left">
                 <b-tabs content-class="mt-3" fill>
 
+                   
+
                     <b-tab v-for="faq in faqs" :key="faq.item" :title="faq.title" :active="faq.title == 'Gari'">
                         <h4 class="questions-title">Preguntas acerca de Gari</h4>
+                        
                         <div class="accordion" role="tablist" v-for="item in faq.items" :key="item.title">
-                            <b-card no-body class="mb-1">
-                            <b-card-header header-tag="header" class="p-1" role="tab" @click="item.id = !item.id">
-                                <div class="accordion-title">{{item.title}}</div>
-                            </b-card-header>
-                            <b-collapse v-model="item.id" visible accordion="my-accordion" role="tabpanel">
-                                <b-card-body>
-                                    <b-card-text>{{ item.description }}</b-card-text>
-                                </b-card-body>
-                            </b-collapse>
-                            </b-card>
+                             <div class="items-collapse">
+                                <details class="collapse-item" v-for="item in faq.items" :key="item.title">
+                                    <summary class="title">{{item.title}}</summary>
+                                    <p class="description">
+                                        {{item.description}}
+                                    </p>
+                                </details>
+                            </div>
                         </div>
+
                     </b-tab>
                     
                 </b-tabs>
@@ -270,30 +272,50 @@ export default {
     .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus{
         border: none;
     }
-    .faqs-page .card-header{
-        background: transparent;
-        background: rgba(192, 190, 240, 0.2);
+    details summary {
+	 list-style: inside none;
+    }
+    .items-collapse .collapse-item {
+        --sp-sm: 1.8rem;
+        --sp-md: 25px;
+         width: 100%;
+        
+        margin: 0 auto;
         border-radius: 4px;
-        height: 50px;
-        padding-top: 10px !important;
-        padding-left: 15px !important;
-        cursor: pointer;
+        background: rgba(192, 190, 240, 0.2);
+        transition: box-shadow 250ms;
+        will-change: box-shadow;
+        overflow: hidden;
+        margin-bottom: 20px;
     }
-    .faqs-page .not-collapsed{
-        color: #4A25AA;
-        font-size: 16px;
-        line-height: 23px;
-    }
-    .faqs-page .accordion > .card > .card-header {
-        height: 85px;
-    }
-    .faqs-page .accordion-title{
+    .items-collapse .collapse-item .title {
+        position: relative;
+        padding: var(--sp-md);
         font-weight: normal;
         font-size: 16px;
         line-height: 23px;
-        padding: 20px;
+        user-select: none;
+        cursor: pointer;
     }
-    .faqs-page .accordion{
-        margin-bottom: 10px;
+    .items-collapse .collapse-item .title::after {
+        content: "→";
+        position: absolute;
+        right: var(--sp-md);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .items-collapse .collapse-item[open] .title::after {
+        content: "↓";
+    }
+    .items-collapse .collapse-item .description {
+        padding: var(--sp-md);
+        margin: 0;
+        font-size: 14px;
+        line-height: 20px;
+        background-color: #FFFFFF;
+        border: 0.1rem solid #fafafa;
+    }
+    .items-collapse .collapse-item .description:not(:first-of-type) {
+        padding-top: 0;
     }
 </style>

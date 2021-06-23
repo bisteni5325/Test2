@@ -11,17 +11,13 @@
                     <div class="section-title">
                         Preguntas frecuentes
                     </div>
-                    <div class="accordion" role="tablist" v-for="faq in faqs" :key="faq.title">
-                        <b-card no-body class="mb-1">
-                        <b-card-header header-tag="header" class="p-1" role="tab" @click="faq.id = !faq.id">
-                            {{faq.title}}
-                        </b-card-header>
-                        <b-collapse v-model="faq.id" visible accordion="my-accordion" role="tabpanel">
-                            <b-card-body>
-                                <b-card-text>{{ faq.text }}</b-card-text>
-                            </b-card-body>
-                        </b-collapse>
-                        </b-card>
+                    <div class="items-collapse">
+                        <details class="collapse-item"  v-for="faq in faqs" :key="faq.id">
+                            <summary class="title">{{faq.title}}</summary>
+                            <p class="description">
+                                {{faq.text}}
+                            </p>
+                        </details>
                     </div>
                     <b-btn variant="primary-outline" to="preguntas-frecuentes" pill>
                         Ver todas las preguntas
@@ -77,20 +73,6 @@ export default {
         color: #4A25AA;
         margin-bottom: 65px;
     }
-    .card-header{
-        background: transparent;
-        background: rgba(192, 190, 240, 0.2);
-        border-radius: 4px;
-        height: 50px;
-        padding-top: 10px !important;
-        padding-left: 15px !important;
-        cursor: pointer;
-    }
-    .not-collapsed{
-        color: #4A25AA;
-        font-size: 16px;
-        line-height: 23px;
-    }
     .btn-primary-outline{
         /* Primary color */
         width: 245px;
@@ -101,30 +83,50 @@ export default {
         margin-top: 20px;
         color: #F20C49;
     }
-    .accordion > .card > .card-header {
-        height: 85px;
+    details summary {
+	 list-style: inside none;
     }
-    @media (max-width: 576px) { 
-     .img-general-mov{
-        display: inline-block;
-        width: 100%;
-        margin-top: -150px !important;
-     }   
-     .img-general-desk{
-         display: none;
-     }
-     .container-fluid{
-        padding-right: 0px;
-     }
+    .items-collapse .collapse-item {
+        --sp-sm: 1.8rem;
+        --sp-md: 25px;
+         width: 100%;
+        
+        margin: 0 auto;
+        border-radius: 4px;
+        background: rgba(192, 190, 240, 0.2);
+        transition: box-shadow 250ms;
+        will-change: box-shadow;
+        overflow: hidden;
+        margin-bottom: 20px;
     }
-
-
-    @media (max-width: 768px) {
-
-     }
-
-
-    @media (min-width: 992px) {
-
-     }
+    .items-collapse .collapse-item .title {
+        position: relative;
+        padding: var(--sp-md);
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        user-select: none;
+        cursor: pointer;
+    }
+    .items-collapse .collapse-item .title::after {
+        content: "→";
+        position: absolute;
+        right: var(--sp-md);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .items-collapse .collapse-item[open] .title::after {
+        content: "↓";
+    }
+    .items-collapse .collapse-item .description {
+        padding: var(--sp-md);
+        margin: 0;
+        font-size: 14px;
+        line-height: 20px;
+        background-color: #FFFFFF;
+        border: 0.1rem solid #fafafa;
+    }
+    .items-collapse .collapse-item .description:not(:first-of-type) {
+        padding-top: 0;
+    }
 </style>

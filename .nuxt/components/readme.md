@@ -15,4 +15,5 @@ You can directly use them in pages and other components without the need to impo
 - `<HowItWorks>` | `<how-it-works>` (components/HowItWorks.vue)
 - `<Logo>` | `<logo>` (components/Logo.vue)
 - `<Navbar>` | `<navbar>` (components/Navbar.vue)
+- `<Test>` | `<test>` (components/test.vue)
 - `<Video>` | `<video>` (components/Video.vue)

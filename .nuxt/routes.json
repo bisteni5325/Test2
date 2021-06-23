@@ -6,8 +6,7 @@
     "chunkName": "pages/faqs",
     "alias": [
       "/preguntas-frecuentes"
-    ],
-    "_name": "_4cfc907c"
+    ]
   },
   {
     "name": "index",
@@ -16,7 +15,6 @@
     "chunkName": "pages/index",
     "alias": [
       "/"
-    ],
-    "_name": "_dba161fa"
+    ]
   }
 ]

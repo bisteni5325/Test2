@@ -26,6 +26,9 @@
   "Navbar": {
     "description": "Auto imported from components/Navbar.vue"
   },
+  "Test": {
+    "description": "Auto imported from components/test.vue"
+  },
   "Video": {
     "description": "Auto imported from components/Video.vue"
   }
