@@ -21,7 +21,7 @@
                     <b-nav-item href="/#faqs">Preguntas frecuentes</b-nav-item>
                     <b-nav-item class="color-red" href="#">Iniciar sesión</b-nav-item>
                     
-                        <b-button variant="primary" pill>Cotizar mi seguro</b-button>
+                        <b-button variant="primary" class="cot-mi-seguro" pill>Cotizar mi seguro</b-button>
                     
                 </b-navbar-nav>
             </b-navbar-nav>
@@ -56,17 +56,21 @@
         width: 100px;
         display: none;
     }
+    .cot-mi-seguro{
+        display: inline;
+    }
     .nav-item{
         margin-right: 10px;
     }
     @media (max-width: 768px) {
         .navbar-brand {
-            padding-left: 0px;
-            position: absolute;
-            left: 75px;
+            margin-left: -80px;
         }
         .cot-head{
             display: inline;
+        }
+        .cot-mi-seguro{
+            display: none;
         }
      }
 </style>
