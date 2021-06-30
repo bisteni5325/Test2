@@ -5,7 +5,7 @@
                 <img src="~/assets/img/hamburger.svg" class="img-fluid" alt="">
             </b-navbar-toggle>
             <b-navbar-brand href="#">
-                <img src="~/assets/img/Gari-Logo.svg" class="img-fluid" alt="">
+                <img src="~/assets/img/Gari-Logo.svg"  alt="">
             </b-navbar-brand>
 
         
@@ -63,8 +63,8 @@
         margin-right: 10px;
     }
     @media (max-width: 768px) {
-        .navbar-brand {
-            margin-left: -120px;
+        .navbar-brand img{
+            margin-left: -140px;
         }
         .cot-head{
             display: inline;
