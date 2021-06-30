@@ -64,7 +64,7 @@
     }
     @media (max-width: 768px) {
         .navbar-brand {
-            margin-left: -80px;
+            margin-left: -120px;
         }
         .cot-head{
             display: inline;
