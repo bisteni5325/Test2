@@ -8,9 +8,8 @@
                 <img src="~/assets/img/Gari-Logo.svg" class="img-fluid" alt="">
             </b-navbar-brand>
 
-            <b-navbar-toggle>
-                <b-button variant="primary" class="cot-head" pill>Cotizar</b-button>
-            </b-navbar-toggle>
+        
+            <b-button variant="primary" class="cot-head" pill>Cotizar</b-button>
 
             <b-collapse id="nav-collapse" is-nav>
 
