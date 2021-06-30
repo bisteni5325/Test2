@@ -69,6 +69,7 @@
     @media (min-width: 1700px) {
         .text-container{
             margin-bottom: 850px;
+            margin-top: 325px;
         }
     }
     .custom-title{

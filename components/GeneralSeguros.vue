@@ -79,7 +79,7 @@
             display: none;
         }
         .img-general{
-            left: 0px;
+            left: 24%;
         }
         .text-section{
             margin-top: 150px;

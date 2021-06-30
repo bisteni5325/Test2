@@ -11,7 +11,7 @@
                     ¿Cómo funciona?
                 </div>
                 <div class="row steps">
-                    <div id="parent" class="col-md-3 text-left" v-animate.repeat="'fade-in-up'" v-for="how in data" :key="how.title">
+                    <div id="parent" class="col-md-3 text-left top-steps" v-animate.repeat="'fade-in-up'" v-for="how in data" :key="how.title">
                         <div class="row">
                             <div class="col-2 col-md-12">
                                 <img id="img-desk" class="mb-4" :src="require(`~/assets/img/${ how.img }`)" alt="">
@@ -173,7 +173,15 @@ export default {
     }
 
     @media (max-width: 576px) { 
-        
+        .top-steps{
+            margin-top: 20px;
+        }
+        .step-text{
+            margin-top: 5px;
+        }
+        .steps{
+            margin-top: 20px;
+        }
     }
 
 
