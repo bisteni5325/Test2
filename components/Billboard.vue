@@ -5,7 +5,7 @@
         </div>
         <div class="billboard-tag" v-animate.repeat="'fade-in-left'">Seguro basado en cuanto y como conduces</div>
         
-        <b-btn variant="primary" v-animate.repeat="'fade-in-up'" fill>Cotizar ahora</b-btn>
+        <a href="https://cotizador.gari.mx/" target="_blank" class="btn btn-primary btn-round" v-animate.repeat="'fade-in-up'">Cotizar ahora</a>
     </div>
 </template>
 <style scoped>

@@ -3,7 +3,8 @@ export default {
   target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'gari-landing',
+    title: 'Gari',
+    description: 'El seguro inteligente basado en cómo y cuánto conduces',
     htmlAttrs: {
       lang: 'es'
     },

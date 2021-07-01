@@ -9,9 +9,7 @@
                     <div class="text" v-animate.repeat="'fade-in-left'">Estos son sólo algunos de los muchos conductores que se benefician de Gari. <br> ¡Lo más probable es que tú también lo hagas!</div>
 
                     <div class="cta-btn" v-animate.repeat="'fade-in-up'">
-                        <b-btn variant="primary" pill>
-                        Cotizar ahora
-                    </b-btn>
+                        <a href="https://cotizador.gari.mx/" target="_blank" class="btn btn-primary btn-round" >Cotizar ahora</a>
                     </div>
                 </div>
             </div>

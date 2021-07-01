@@ -8,9 +8,8 @@
                 <img src="~/assets/img/Gari-Logo.svg"  alt="">
             </b-navbar-brand>
 
+            <a href="https://cotizador.gari.mx/" target="_blank" class="btn btn-primary btn-round cot-head" >Cotizar</a>
         
-            <b-button variant="primary" class="cot-head" pill>Cotizar</b-button>
-
             <b-collapse id="nav-collapse" is-nav>
 
             <!-- Right aligned nav items -->
@@ -21,7 +20,7 @@
                     <b-nav-item href="/#faqs">Preguntas frecuentes</b-nav-item>
                     <b-nav-item class="color-red" href="#">Iniciar sesión</b-nav-item>
                     
-                        <b-button variant="primary" class="cot-mi-seguro" pill>Cotizar mi seguro</b-button>
+                    <a href="https://cotizador.gari.mx/" target="_blank" class="btn btn-primary btn-round cot-mi-seguro" >Cotizar mi seguro</a>
                     
                 </b-navbar-nav>
             </b-navbar-nav>

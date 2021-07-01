@@ -118,3 +118,10 @@ body{
     display: block;
     opacity: 1;
 }
+.btn{
+    padding-top: 10px;
+}
+.btn-primary:focus, .btn-primary.focus{
+    border-color: transparent;
+    box-shadow: none;
+}
