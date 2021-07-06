@@ -98,11 +98,13 @@ export default {
         will-change: box-shadow;
         overflow: hidden;
         margin-bottom: 20px;
+        font-family: Jost;
+        font-weight: 500;
     }
     .items-collapse .collapse-item .title {
         position: relative;
         padding: var(--sp-md);
-        font-weight: normal;
+        font-weight: 500;
         font-size: 16px;
         line-height: 23px;
         user-select: none;

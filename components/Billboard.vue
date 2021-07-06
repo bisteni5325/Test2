@@ -3,7 +3,7 @@
         <div class="billboard-title" v-animate.repeat="'fade-in-right'">
             Un seguro justo y divertido
         </div>
-        <div class="billboard-tag" v-animate.repeat="'fade-in-left'">Seguro basado en cuanto y como conduces</div>
+        <div class="billboard-tag" v-animate.repeat="'fade-in-left'">Seguro basado en cuanto y como conduces.</div>
         
         <a href="https://cotizador.gari.mx/" target="_blank" class="btn btn-primary btn-round" v-animate.repeat="'fade-in-up'">Cotizar ahora</a>
     </div>
@@ -12,7 +12,7 @@
     .billboard-section{
         background-image: url('~/assets/img/billboard.png');
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         height: max-content;
         background-position: bottom;
 
@@ -29,10 +29,11 @@
     .billboard-tag{
         font-family: Jost;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 500;
         font-size: 20px;
         line-height: 20px;
         color: #282828;
+        margin-top: 16px;
     }
     .btn-primary{
         width: 188px;
@@ -50,6 +51,13 @@
             background-size:contain;
             height: max-content;
         }
+        .btn-primary{
+            width: 150px;
+            height: 35px;
+            padding-top: 5px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
     }
 
     @media (max-width: 768px) {
@@ -64,12 +72,7 @@
             font-size: 16px;
             line-height: 40px;
         }
-        .btn-primary{
-            width: 188px;
-            height: 44px;
-            margin-top: 20px;
-            margin-bottom: 30px;
-        }
+        
     }
 
     @media (min-width: 1650px) {

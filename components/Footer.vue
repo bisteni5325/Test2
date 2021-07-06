@@ -3,7 +3,7 @@
         <footer>
             <div class="row">
                 <div class="col-6 col-md-2">
-                    <img src="~/assets/img/Gari-Logo-Blanco.svg" alt="">
+                    <img src="~/assets/img/Gari-Logo-Blanco.svg" alt="" style="max-width:130px">
                 </div>
                 <div class="col-12 col-md-5 row order-12 order-md-1">
                     <div class="col-md-4">

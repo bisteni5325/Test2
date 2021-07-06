@@ -1,6 +1,6 @@
 <template>
     <div class="video-section">
-        <div class="text-center">
+        <div class="text-center" style="display:none">
             <div class="video-container">
                 <img src="~/assets/img/video.svg" alt="">
             </div>
@@ -35,25 +35,25 @@ export default {
             data : [
                 {
                     title: 'Digital e inmediato',
-                    text: 'Cotiza y contrata de manera inmediata en nuestro sitio web. Tu seguro comienza en ese instante',
+                    text: 'Cotiza y contrata de manera inmediata en nuestro sitio web. Tu seguro comienza en ese instante.',
                     img: 'contrata.svg',
                     img_hover: 'contrata-hov.svg'
                 },
                 {
                     title: 'Descarga el app de Gari',
-                    text: 'Al contratar tu póliza, deberás descargar el app de Gari en tu teléfono',
+                    text: 'Al contratar tu póliza, deberás descargar el app de Gari en tu teléfono.',
                     img: 'descarga.svg',
                     img_hover: 'descarga-hov.svg'
                 },
                 {
                     title: '¡Listo, ya estás cubierto!',
-                    text: 'Mientras conduces, el app de Gari analiza tus patrones de manejo',
+                    text: 'Mientras conduces, el app de Gari analiza tus patrones de manejo.',
                     img: 'maneja.svg',
                     img_hover: 'maneja-hov.svg'
                 },
                 {
                     title: 'Pagos automáticos',
-                    text: 'Cada mes, se calculará tu tarifa con base en los kms. recorridos y obtendrás descuentos por buen manejo',
+                    text: 'Cada mes, se calculará tu tarifa con base en los kms. recorridos y obtendrás descuentos por buen manejo.',
                     img: 'pagos.svg',
                     img_hover: 'pagos-hov.svg'
                 }
@@ -64,8 +64,8 @@ export default {
 </script>
 <style scoped>
     .video-section{
-        min-height: 800px;
-        background: conic-gradient(from 189.41deg at 56.22% 28.4%, rgba(8, 191, 217, 0) -41.05deg, rgba(131, 236, 195, 0) 23.2deg, rgba(153, 206, 213, 0.5) 36.74deg, rgba(175, 175, 232, 0.7) 89.55deg, #AFAFE8 200.48deg, rgba(175, 175, 232, 0.7) 240.14deg, rgba(8, 191, 217, 0) 318.95deg, rgba(131, 236, 195, 0) 383.2deg) no-repeat;
+        min-height: 600px;
+       /* background: conic-gradient(from 189.41deg at 56.22% 28.4%, rgba(8, 191, 217, 0) -41.05deg, rgba(131, 236, 195, 0) 23.2deg, rgba(153, 206, 213, 0.5) 36.74deg, rgba(175, 175, 232, 0.7) 89.55deg, #AFAFE8 200.48deg, rgba(175, 175, 232, 0.7) 240.14deg, rgba(8, 191, 217, 0) 318.95deg, rgba(131, 236, 195, 0) 383.2deg) no-repeat; */
         background-size:auto 90%;
         padding-top: 110px;
         padding-bottom: 1px;
@@ -96,6 +96,7 @@ export default {
         }
         .video-section{
             min-height: 400px;
+            padding-top: 0px;
         }
     }
 
@@ -123,8 +124,8 @@ export default {
      }
 
     .how-works-section{
-        margin-top: 200px;
-        margin-bottom: 200px;
+       /* margin-top: 200px;
+        margin-bottom: 200px; */
     }
     .section-title{
         font-family: Jost;

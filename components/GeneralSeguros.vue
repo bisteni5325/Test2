@@ -1,8 +1,8 @@
 <template>
     <div class="general-section mt-5">
         <div class="container-fluid">
-            <img src="~/assets/img/left.svg" class="img-left" alt="">
-            <img src="~/assets/img/right.svg" class="img-right" alt="">
+            <img src="~/assets/img/left.png" class="img-left" alt="">
+            <img src="~/assets/img/right.png" class="img-right" alt="">
             <div class="row info-container">
                 <div class="col-md-4">
                     <img src="~/assets/img/general-seguros.svg" class="img-general img-fluid" v-animate.repeat="'fade-in-up'" alt="">        
@@ -11,7 +11,7 @@
                     <div class="general-title " v-animate.repeat="'fade-in-right'">
                         ¡Gari está respaldado por una de las mejores aseguradoras del país!
                     </div>
-                    <p v-animate.repeat="'fade-in-left'">
+                    <p v-animate.repeat="'fade-in-left'" class="special-text">
                         Cambiar al texto de abajo. Todas las pólizas de Gari están suscritas por General de Seguros, por lo que la solidez y <br> respaldo de nuestro producto está garantizado.  <br><br>
 
                         General de Seguros es una de las mejores aseguradoras mexicanas y cuenta con más de 50 años de experiencia en el <br> cuidado de las personas y empresas.  <br><br>
@@ -55,7 +55,7 @@
         margin-top: 30px;
         font-family: Jost;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 500;
         font-size: 16px;
         line-height: 23px;
 
@@ -79,7 +79,7 @@
             display: none;
         }
         .img-general{
-            left: 24%;
+            left: 15%;
         }
         .text-section{
             margin-top: 150px;

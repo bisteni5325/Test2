@@ -58,7 +58,7 @@ body{
 
 
 .animate {
-    transition-delay: .3s;
+    transition-delay: .1s;
     transition-duration: 1s;
     transition-timing-function: all;
 }
