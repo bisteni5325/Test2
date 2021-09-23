@@ -112,8 +112,9 @@
         }
      }
 
-
-    @media (min-width: 992px) {
-
-     }
+    @media only screen and (min-width: 770px) and (max-width: 1400px){
+        .general-section{
+            margin-top: -330px !important;
+        }
+    }
 </style>
