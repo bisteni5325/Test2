@@ -18,7 +18,33 @@
     <div class="app-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-left offset-md-6 text-container">
+                <b-col md="6" order="2" order-md="1">
+                    <div class="carousel-container">
+                        <div class="slider-holder">
+                            <div class="image-holder" :style="{'left':leftProperty + 'px'}">
+                            <div class="slider-image">
+                                <img src="~/assets/img/mockup-phone1.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="slider-image" :class="leftProperty == 0 ? 'opacity-active' : ''">
+                                <img src="~/assets/img/mockup-phone2.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="slider-image" :class="leftProperty == -1100 ? 'opacity-active' : ''">
+                                <img src="~/assets/img/mockup-phone3.png" alt="" class="img-fluid">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spinner-holder">
+                        <div class="spinner" style="margin-left:0px" @click="leftProperty = 0"/>
+                        <div class="spinner" style="margin-left:40px" @click="leftProperty = -400" />
+                        <div class="spinner" style="margin-left:80px"  @click="leftProperty = -800" />
+                    </div>
+                    <div class="button-holder">
+                        <span v-if="leftProperty < 0" @click="setLeft(+400)" class="prev">‹</span>
+                        <span v-if="leftProperty > -800" @click="setLeft(-400)" class="next">›</span>
+                    </div>
+                </b-col>
+                <b-col md="6" class="text-left text-container" order="1" order-md="2">
                     <div class="app-title animate__animated" v-animate.repeat="'fade-in-right'">
                         Todo en tu app.
                     </div>
@@ -44,17 +70,102 @@
                     <div class="prev-text animate__animated" v-animate.repeat="'fade-in-up'">
                         Reporta siniestros, chatea con nuestros representantes o cancela tu póliza desde tu app.
                     </div>
-                    <img src="~/assets/img/app-movil.png" class="img-fluid app-mov" alt="">
-
-                </div>
+                </b-col>
+                
             </div>
         </div>
     </div>
     </div>
 </template>
+<script>
+export default {
+    data () {
+        return {
+            leftProperty: 0
+        }
+    },
+    methods: {
+        setLeft(value){
+        this.leftProperty = this.leftProperty + value
+        }
+    }
+}
+</script>
 <style scoped>
-.app-mov{
+.slider-holder {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.image-holder {
+  width: 3600px;
+  background-color: red;
+  clear: both;
+  position: relative;
+
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
+
+.slider-image {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 405px;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.slider-img img {
+  width: 720px;
+}
+.prev {
+  height: 60px;
+  width: 65px;
+  left: 50px;
+  color: #26D07C;
+  cursor: pointer;
+  font-size: 40px;
+  line-height: 36px;
+  position: absolute;
+  cursor: pointer;
+  text-align: center;
+  z-index: 10;
+  margin-top: -330px;
+}
+.next {
+  height: 60px;
+  width: 65px;
+  position: absolute;
+  right: 50px;
+  color: #26D07C;
+  cursor: pointer;
+  font-size: 40px;
+  line-height: 36px;
+  cursor: pointer;
+  text-align: center;
+  z-index: 10;
+  margin-top: -330px;
+}
+.spinner-holder{
+    text-align: center;
+    width: 100%;
     display: none;
+    justify-content: center;
+    align-items: center;
+}
+.spinner{
+   position: absolute;
+    width: 11px;
+    height: 11px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
 }
 .custom-app-section{
     background-image: url('~/assets/img/personas-desktop.png');
@@ -126,7 +237,7 @@
     }
 
     .app-section{
-        margin-top: 200px;
+        margin-top: 280px;
     }
     .img-background{
         position: absolute;
@@ -184,6 +295,18 @@
             background-repeat: no-repeat;
             background-size: 100%;
         }
+        .carousel-container{
+            margin-top: 50px;
+        }
+        .slider-image{
+            width: 360px;
+        }
+        .button-holder{
+            display: none;
+        }
+        .spinner-holder{
+            display: flex;
+        }
     }
 
 
@@ -208,9 +331,6 @@
             }
             .text-section {
                 margin-top: 500px;
-            }
-            .app-mov{
-                display: inherit;
             }
      }
 

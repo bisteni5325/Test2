@@ -4,18 +4,13 @@
             <img src="~/assets/img/left.png" class="img-left" alt="">
             <img src="~/assets/img/right.png" class="img-right" alt="">
             <div class="row info-container">
-                <div class="col-md-4">
-                    <img src="~/assets/img/general-seguros.svg" class="img-general img-fluid" v-animate.repeat="'fade-in-up'" alt="">        
+                <div class="col-md-4 img-shield">
+                    <img src="~/assets/img/shield.svg" class="img-fluid" v-animate.repeat="'fade-in-up'" alt="">        
                 </div>
                 <div class="col-md-8 text-section">
                     <div class="general-title " v-animate.repeat="'fade-in-right'">
                         ¡Gari está respaldado por una de las mejores aseguradoras del país!
                     </div>
-                    <p v-animate.repeat="'fade-in-left'" class="special-text">
-                        Cambiar al texto de abajo. Todas las pólizas de Gari están suscritas por General de Seguros, por lo que la solidez y <br> respaldo de nuestro producto está garantizado.  <br><br>
-
-                        General de Seguros es una de las mejores aseguradoras mexicanas y cuenta con más de 50 años de experiencia en el <br> cuidado de las personas y empresas.  <br><br>
-                    </p>
                 </div>
             </div>
         </div>
@@ -32,10 +27,12 @@
 }
     .img-left{
         position: absolute;
+        margin-top: -80px;
     }
     .img-right{
         position: absolute;
         right: 0px;
+        margin-top: -80px;
     }
     .wrap{
         position: relative;
@@ -63,10 +60,11 @@
 
         color: #282828;
     }
-    .img-general{
-        position: absolute;
-        left: 180px;
-        margin-top: 40px;
+    .img-shield{
+        text-align: right;
+    }
+    .img-shield img{
+        margin-top: -40px;
     }
 
     @media (max-width: 576px) { 
@@ -82,14 +80,35 @@
             left: 15%;
         }
         .text-section{
-            margin-top: 150px;
+            margin-top: 20px;
         }
         .container-fluid{
             padding-left: 15px;
         }
         .info-container{
-            padding-top: 0px !important;
-            margin-bottom: 0px;
+            padding-top: 200px !important;
+            padding-bottom: 400px;
+        }
+        .img-shield{
+            text-align: center;
+        }
+        .img-shield img{
+            margin-top: 00px;
+        }
+        .general-title{
+            font-family: Jost;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 29px;
+            text-align: center;
+
+            /* Text / Dark */
+
+            color: #282828;
+        }
+        .general-section{
+            background-color: #F6F6F6;
         }
      }
 

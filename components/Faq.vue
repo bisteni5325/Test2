@@ -1,7 +1,7 @@
 <template>
     <div class="faq-section" id="faqs">
         <div class="container-fluid text-center">
-            
+            <img src="~/assets/img/responsive-contact.png" class="bg-mv" alt="">
             <div class="row">
                 <div class="col-md-6">
                     <img src="~/assets/img/faqs-desktop.png" class="img-general-desk mt-5 img-fluid" alt="">
@@ -53,15 +53,15 @@ export default {
 }
 </script>
 <style scoped>
-.img-general-desk{
-    display: inherit;
-}
-.img-general-mov{
-    display: none;
-}
-.faq-section{
-    margin-bottom: 100px;
-}
+    .img-general-desk{
+        display: inherit;
+    }
+    .img-general-mov{
+        display: none;
+    }
+    .faq-section{
+        margin-bottom: 100px;
+    }
     .section-title{
         font-family: Jost;
         font-style: normal;
@@ -131,4 +131,19 @@ export default {
     .items-collapse .collapse-item .description:not(:first-of-type) {
         padding-top: 0;
     }
+    .bg-mv{
+        display: none;
+    }
+    @media (max-width: 576px) { 
+        .bg-mv{
+            display: initial;
+            position: absolute;
+            margin-top: -225px;
+            right: 0px;
+        }
+        .faq-section{
+            margin-top: -270px;
+        }
+    }
+
 </style>
