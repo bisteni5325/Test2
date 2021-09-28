@@ -178,7 +178,7 @@ export default {
     @media (min-width: 1700px) {
         .text-container{
             margin-bottom: 850px;
-            margin-top: 325px;
+            margin-top: 0px;
         }
     }
     .custom-title{
@@ -299,10 +299,7 @@ export default {
             margin-top: 50px;
         }
         .slider-image{
-            width: 360px;
-        }
-        .button-holder{
-            display: none;
+            width: 380px;
         }
         .spinner-holder{
             display: flex;
@@ -311,9 +308,7 @@ export default {
 
 
     @media (max-width: 768px) {
-        .app-subtitle, .prev-text{
-            display: none;
-        }
+        
         .app-title{
             margin-top: 50px;
         }
