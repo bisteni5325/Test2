@@ -291,7 +291,7 @@ export default {
     }
     @media (max-width: 576px) { 
         .custom-app-section{
-            background-image: url('~/assets/img/personas-movil.png');
+            background-image: url('~/assets/img/personas-movil.svg');
             background-repeat: no-repeat;
             background-size: 100%;
         }
