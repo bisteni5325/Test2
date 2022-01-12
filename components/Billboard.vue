@@ -1,7 +1,7 @@
 <template>
     <div class="billboard-section text-center">
         <div class="billboard-title" v-animate.repeat="'fade-in-right'">
-            Un seguro justo y divertido
+            Un seguro justo y divertido!!
         </div>
         <div class="billboard-tag" v-animate.repeat="'fade-in-left'">Seguro basado en cuanto y como conduces.</div>
         
